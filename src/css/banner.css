@@ -1,0 +1,130 @@
+.wrapper-banner{
+    position: relative;
+    height: 600px;
+}
+.backg{
+    position: absolute;
+    width: 513px;
+    height: 352px;
+    border-radius: 176px 0px 0px 176px;
+    background-color: #4C60D1;
+    right: 0;
+    bottom: 0;
+}
+.banner{
+    display: contents;
+}
+.banner-l{
+    margin-top: 186px;
+    margin-left: 13px;
+}
+.title-banner{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 50px;
+}
+.description-banner{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 27px;
+    margin-right: 66px;
+}
+.buttons-banner{
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+.banner-r{
+    margin-top: 105px;
+    z-index: 1;
+}
+.banner-r-mobile-img{
+    width: 100%;
+}
+.banner-r-mobile{
+    display: none;
+}
+@media(max-width: 1279px){
+    .wrapper-banner{
+        height: 550px;
+    }
+    .banner-l{
+        grid-column: 1/5;
+    }
+    .banner-r{
+        grid-column-start: 5;
+        grid-column-end: 9;
+    }
+    .title-banner{
+        font-size: 38px;
+        line-height: 42px;
+    }
+    .description-banner{
+        font-size: 17px;
+        line-height: 26px;
+    }
+}
+@media(max-width: 1023px){
+    .wrapper-banner{
+        height: 500px;
+    }
+    .banner-l{
+        grid-column: 1/4;
+        z-index: 1;
+        margin-top: 100px;
+    }
+    .banner-r{
+        grid-column-start: 4;
+        grid-column-end: 7;
+    }
+    .backg{
+        width: 410px;
+        height: 281px;
+    }
+    .title-banner{
+        font-size: 34px;
+        line-height: 38px;
+    }
+    .description-banner{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media(max-width: 767px) {
+    .wrapper-banner{
+        height: auto;
+    }
+    .banner-r{
+        display: none;
+    }
+    .banner-r-mobile{
+        display: initial;
+        grid-column: 1 / 5;
+        margin-top: 79px;
+        z-index: 1;
+    }
+    .banner-r-mobile img{
+        width: 105%;
+        margin-left: -15px;
+    }
+    .backg{
+        width: 305px;
+        height: 204px;
+        border-radius: 102px 0px 0px 102px;
+        top: 130px;
+    }
+    .banner-l{
+        margin-top: 30px;
+        grid-column: 1 / 5;
+        margin-left: 0;
+        text-align: center;
+    }
+    .title-banner{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .description-banner{
+        margin: 27px 0 0;
+    }
+}

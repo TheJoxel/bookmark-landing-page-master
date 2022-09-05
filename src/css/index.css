@@ -1,0 +1,17 @@
+@import url('./gridWrapper.css');
+@import url('./menu.css');
+@import url('./button.css');
+@import url('./banner.css');
+@import url('./features.css');
+@import url('./tabs.css');
+@import url('./download.css');
+@import url('./cards.css');
+@import url('./question.css');
+@import url('./acordeon.css');
+@import url('./newsletter.css');
+@import url('./footer.css');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}

@@ -1,0 +1,138 @@
+.wrapper-menu{
+    position: relative;
+    display: inline-grid;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    margin-top: 48px;
+}
+.menu{
+    display: contents;
+}
+.logo{
+    margin: auto 4px auto 21px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -8px;
+    margin-right: 15px;
+}
+.opc-nav{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 28px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+.opc-nav:hover{
+    color: #FB5859;
+}
+.button-login{
+    width: 111px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.11em;
+    color: #fff;
+    background-color: #FB5859;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.button-login:hover{
+    background: none;
+    color: #FB5859;
+    border: 3px solid #FB5859;
+}
+.hamburguesa, .wrapper-menu-mobile{
+    display: none;
+}
+@media(max-width: 1279px){
+    
+    .logo{
+        grid-column: 1/3;
+    }
+    .nav{
+        grid-column-start: 5;
+        grid-column-end: 9;
+    }
+}
+@media(max-width: 1023px){
+    
+    .logo{
+        grid-column: 1/3;
+    }
+    .nav{
+        grid-column-start: 3;
+        grid-column-end: 7;
+    }
+}
+@media(max-width: 767px) {
+    .nav{
+        display: none;
+    }
+    .logo{
+        grid-column: 1/3;
+        margin: 0;
+    }
+    .hamburguesa{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        grid-column-start: 4;
+    }
+    .menu-position-mobile{
+        position: relative;
+    }
+    .wrapper-menu-mobile{
+        position: absolute;
+        padding-top: 48px;
+        display: block;
+        height: 620px;
+        width: 100%;
+        background-color: #2F354F;
+        top: 0;
+        z-index: 2;
+    }
+    .menu-mobile{
+        display: contents;
+    }
+    .logo-mobile{
+        grid-column: 1/3;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    .nav-mobile{
+        grid-column: 1/5;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .opc-nav-mobile{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 67px;
+        border-top: 1px solid #484E68;
+        border-bottom: 1px solid #484E68;
+        color: #F7FBFC;
+    }
+    .button-login-mobile{
+        margin-top: 25px;
+        margin-bottom: 210px;
+        width: 100%;
+        background: none;
+        border: 2px solid #F7FBFC;
+        color: #F7FBFC;
+    }
+    
+}

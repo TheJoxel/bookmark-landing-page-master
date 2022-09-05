@@ -1,0 +1,116 @@
+.wrapper-newsletter{
+    height: 360px;
+    background-color: #5266DF;
+}
+.newsletter{
+    text-align: center;
+    color: #F2F5FF;
+}
+.p-newsletter{
+    margin-top: 58px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 38px;
+    letter-spacing: 0.39em;
+}
+.h2-newsletter{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    max-width: 410px;
+    margin: 27px auto 0;
+
+}
+.form{
+    max-width: 442px ;
+    margin: 36px auto 0;
+}
+
+.input-newsletter{
+    width: 254px;
+    outline: none;
+    height: 41px;
+    padding: 0 20px;
+    border-radius: 5px;
+    margin-right: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+.border-act{
+    border: 3px solid #fff;
+}
+.border-error{
+    border: 3px solid #FB5959;
+}
+.error{
+    width: 276px;
+    background-color: #FB5959;
+    margin-top: -4px;
+    border-radius: 0 0 5px 5px;
+    text-align: left;
+    padding: 6px 12px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #F2F5FF;
+    font-style: italic;
+    letter-spacing: 0.04em;
+}
+@media(max-width: 1279px){
+    .newsletter{
+        grid-column: 1/9;
+    }
+    .h2-newsletter{
+        font-size: 30px;
+        line-height: 34px;
+    }
+}
+@media(max-width: 1023px){
+    .newsletter{
+        grid-column: 1/7;
+    }
+    .h2-newsletter{
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+@media(max-width: 767px) {
+    .newsletter{
+        grid-column: 1/5;
+    }
+    .h2-newsletter{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .form{
+        width: 100%;
+    }
+    .input-newsletter{
+        width: 99%;
+        padding: 0 0 0 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    ::placeholder{
+        padding-left: 20px;
+    }
+    .error{
+        width: 100%;
+        margin-top: -82px;
+        padding: 6px 0 6px ;
+    }
+    .msg-error{
+        margin-left: 12px;
+    }
+    .width-126{
+        width: 100%;
+    }
+    .button-mobile-news{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .border-error{
+        border: 2px solid #FB5959;
+    }
+}

@@ -1,0 +1,25 @@
+.question{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 162px;
+}
+
+.button-question{
+    margin: 55px auto 150px;
+}
+@media(max-width: 1279px){
+    .question{
+        grid-column: 1/9;
+    }
+}
+@media(max-width: 1023px){
+    .question{
+        grid-column: 1/7;
+    }
+}
+@media(max-width: 767px) {
+    .question{
+        grid-column: 1/5;
+    }
+}

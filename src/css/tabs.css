@@ -1,0 +1,34 @@
+.wrapper-tabs{
+    border-bottom: 1px solid #E0E0EA ;
+    width: 730px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.opc-tabs{
+    width: 242px;
+    height: 50px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    cursor: pointer;
+    color: #6B6B73
+}
+.opc-tabs:hover{
+    color: #F9565B;
+}
+.opc-tabs-active{
+    color: #2C2D3F;
+    border-bottom: 3px solid #F9565B;
+}
+@media(max-width: 1023px){
+    .opc-tabs{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media(max-width: 767px) {
+    .wrapper-tabs {
+        width: auto;}
+    }
