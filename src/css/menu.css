@@ -27,6 +27,7 @@
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
+    color: #000;
 }
 .opc-nav:hover{
     color: #FB5859;
